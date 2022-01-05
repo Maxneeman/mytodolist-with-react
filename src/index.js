@@ -4,21 +4,22 @@ import './index.css';
 import App from './Components/App';
 
 const DATA = [
-  {name : 'Eat', completed : true,  id : 'todo-1'},
-  {name : 'Sleep', completed : false, id : 'todo-2'},
-  {name : 'Repeat', completed : false, id : 'todo-3'}
-]
+  { id: "todo-0", name: "Eat", completed: true },
+  { id: "todo-1", name: "Sleep", completed: false },
+  { id: "todo-2", name: "Repeat", completed: false }
+];
 
-const btnValues = [
-  {name: 'All', pressed : 'true' },
-  {name: 'Active', pressed : 'false' },
-  {name: 'Completed', pressed : 'false' }
+const btnFatures = [
+  {name: 'All', arialPressed: true},
+  {name: 'Active', arialPressed: false},
+  {name: 'Completed', arialPressed: false},
 ]
 
 ReactDOM.render(
   <React.StrictMode>
-    <App tasks = {DATA} btn = {btnValues} />
+    <App tasks = {DATA} btnFatures = {btnFatures} />
   </React.StrictMode>,
   document.getElementById('root')
 );
+
 
